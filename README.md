@@ -35,6 +35,7 @@ pip install -r requirements.txt
 
 # Environment variables
 export CUDA_ROOT=/usr/local/cuda
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib
 ```
 
 Then, follow the [jupyter instructions to run a public notebook server](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html#notebook-public-server).
