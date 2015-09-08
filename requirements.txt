@@ -30,7 +30,6 @@ pbr==1.6.0
 pexpect==3.3
 pickleshare==0.5
 ptyprocess==0.5
-PyBrain==0.3
 pydot==1.0.2
 pydot2==1.0.33
 Pygments==2.0.2
@@ -43,7 +42,6 @@ scikit-learn==0.16.1
 scipy==0.16.0
 simplegeneric==0.8.1
 six==1.9.0
-sklearn==0.0
 terminado==0.5
 Theano==0.7.0
 tornado==4.2.1
