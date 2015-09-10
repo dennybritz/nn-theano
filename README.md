@@ -11,7 +11,7 @@ pip install -r requirements.txt
 jupyter notebook .
 ```
 
-### Running on an Amazon EC2 Instance with GPU
+### Running on an GPU-optimized Amazon EC2 instance
 
 Run a EC2 GPU-optimized instance, for example `g2.2xlarge`. 
 
