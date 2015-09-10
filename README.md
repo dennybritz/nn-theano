@@ -11,14 +11,14 @@ pip install -r requirements.txt
 jupyter notebook .
 ```
 
-### Running on an GPU-optimized Amazon EC2 instance
+### Running on an GPU-optimized Amazon EC2 
 
-Run a EC2 GPU-optimized instance, for example `g2.2xlarge`. 
+Use an AWS GPU-optimized instance, for example `g2.2xlarge`. You can use the following commands to configure and Ubuntu machine:
 
 ```bash
 # Install build tools
 sudo apt-get update
-sudo apt-get install -y build-essential git python-pip libfreetype6-dev libxft-dev libncurses-dev libopenblas-dev  gfortran python-matplotlib libblas-dev liblapack-dev libatlas-base-dev python-dev python-pydot linux-image-generic
+sudo apt-get install -y build-essential git python-pip libfreetype6-dev libxft-dev libncurses-dev libopenblas-dev  gfortran python-matplotlib libblas-dev liblapack-dev libatlas-base-dev python-dev python-pydot linux-headers-generic
 sudo pip install -U pip
 
 # Install CUDA 7
@@ -38,6 +38,11 @@ export CUDA_ROOT=/usr/local/cuda-7.0
 export PATH=$PATH:$CUDA_ROOT/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib64
 export THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32
+# For profiling only
+export CUDA_LAUNCH_BLOCKING=1
+
+# Startup jupyter noteboook
+jupyter notebook
 ```
 
-Then, follow the [jupyter instructions to run a public notebook server](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html#notebook-public-server).
+To start a public notebook server that is accessible over the network you can [follow the official instructions](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html#notebook-public-server).
