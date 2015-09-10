@@ -1,5 +1,7 @@
 # Optimizing Neural Network implementation with Theano
 
+**[Read the blog post here.](https://github.com/dennybritz/nn-theano)**
+
 ### Local Jupyter notebook setup
 
 ```bash
