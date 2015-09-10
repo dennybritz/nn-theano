@@ -13,9 +13,9 @@ pip install -r requirements.txt
 jupyter notebook .
 ```
 
-### Running on an GPU-optimized Amazon EC2 
+### Running on an GPU-optimized Amazon EC2 instance
 
-Use an AWS GPU-optimized instance, for example `g2.2xlarge`. You can use the following commands to configure and Ubuntu machine:
+Use an AWS GPU-optimized instance, for example `g2.2xlarge`. You can use the following commands to configure an Ubuntu machine:
 
 ```bash
 # Install build tools
